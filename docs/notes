@@ -1,0 +1,5 @@
+Using local files:
+You can use local files to display in pdf. Simply make sure that you use the local file protocol file://<path-to-file>.
+This means we might be able to render handlebars html into a temp directory and then produce the pdf by opening that
+file into the chrome browser.
+Example: page.goto(`file://${path.resolve(__dirname)}/test.html`);
